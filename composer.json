@@ -1,0 +1,8 @@
+{
+    "name": "maxcswann/email_emogger",
+    "require": {
+        "pelago/emogrifier": "^5.0",
+        "gajus/dindent": "2.0.*",
+        "shopping24/css-beautifier": "^1.0"
+    }
+}

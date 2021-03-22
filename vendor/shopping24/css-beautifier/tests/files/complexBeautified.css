@@ -1,0 +1,212 @@
+@import url('http://google.com');
+#s24widget {
+    height: 385px;
+    margin-bottom: 36px;
+    min-width: 310px;
+    width: 620px
+}
+.s24_widget {
+    font-family: 'Source Sans Pro', Helvetica, arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
+    position: relative
+}
+.s24_widget_border {
+    border: 0 none
+}
+.s24_widget .s24_headline {
+    font-weight: 400;
+    line-height: 31px;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+    padding: 0;
+    margin: 34px 0 30px
+}
+a.s24_privacy_button {
+    float: right;
+    background: #a2a2a2;
+    color: #fff;
+    border-radius: 50px;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: 7px 0 0
+}
+a.s24_privacy_button:hover {
+    background: #787474;
+    color: #fff
+}
+.s24_promotion {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    text-transform: uppercase;
+    margin: 0 19px 0 0
+}
+.s24_promotion::after {
+    content: 'Promotion';
+    font-size: 12px;
+    color: #a2a2a2;
+    letter-spacing: 1px
+}
+.s24_products_wrapper {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch
+}
+.s24_products {
+    margin: 0;
+    text-align: left
+}
+.s24_product_size_maxi .s24_product {
+    width: 140px;
+    height: 276px;
+    float: left;
+    position: relative;
+    border: 0 none;
+    padding: 0;
+    margin: 0 20px 0 0
+}
+.s24_product_size_maxi .s24_product:last-child {
+    margin: 0
+}
+.s24_product_size_maxi .s24_calltoaction {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background-color: #76ADF7;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: absolute;
+    height: 36px;
+    line-height: 36px;
+    top: 87%;
+    left: 0;
+    width: 100%;
+    -webkit-transition: background-color .4s;
+    -moz-transition: background-color .4s;
+    -khtml-transition: background-color .4s;
+    -o-transition: background-color .4s;
+    -ms-transition: background-color .4s;
+    transition: background-color .4s
+}
+.s24_product_size_maxi .s24_calltoaction::after {
+    content: 'Zum Angebot'
+}
+.s24_product_size_maxi .s24_calltoaction:hover {
+    background-color: #64A0F3
+}
+.s24_product_size_maxi .s24_product_image {
+    width: 140px;
+    height: 140px;
+    padding: 2px 0;
+    margin: 0
+}
+.s24_product_size_maxi .s24_product_data {
+    padding: 6px 0;
+    margin: 0;
+    background-color: transparent;
+    color: #4a4a4a;
+    height: 90px
+}
+.s24_product_size_maxi .s24_product_data .s24_title {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 9px 0 3px
+}
+.s24_product_size_maxi .s24_product_data .s24_price {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #4a4a4a
+}
+.s24_widget .s24_old_price:before, .s24_widget .s24_price:before {
+    content: 'Für '
+}
+.s24_product_size_maxi .s24_product_data .s24_price.s24_hide_price, .s24_product_size_maxi .s24_product_data .s24_old_price.s24_hide_price, .s24_product_size_maxi .s24_product_data .s24_shop {
+    display: none
+}
+.s24_product_size_maxi .s24_product_data .s24_old_price {
+    color: #C00;
+    line-height: normal;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: none
+}
+.s24_product_size_maxi .s24_shipping {
+    font-size: 13px;
+    line-height: 14px;
+    color: #a2a2a2;
+    margin: -3px 0 13px;
+    width: 75px
+}
+.s24_product_size_maxi .s24_shipping img {
+    margin: 0 4px 0 0
+}
+.s24_product_size_maxi .s24_pagination_right_arrow {
+    background-image: url(//widget.s24.com/images/pagination/essen-und-trinken_2017-03_rechts.png)
+}
+.s24_product_size_maxi .s24_pagination_left_arrow {
+    background-image: url(//widget.s24.com/images/pagination/essen-und-trinken_2017-03_links.png)
+}
+.s24_product_size_maxi .s24_pagination_right_arrow, .s24_product_size_maxi .s24_pagination_left_arrow {
+    background-color: rgba(255, 255, 255, .8);
+    background-position: center;
+    border-radius: 0%;
+    height: 50px;
+    width: 30px;
+    -webkit-transition: background-color .4s;
+    -moz-transition: background-color .4s;
+    -khtml-transition: background-color .4s;
+    -o-transition: background-color .4s;
+    -ms-transition: background-color .4s;
+    transition: background-color .4s
+}
+.s24_product_size_maxi .s24_pagination_left_arrow.s24_floating_arrow, .s24_product_size_maxi .s24_pagination_right_arrow.s24_floating_arrow {
+    top: 17%
+}
+.s24_modern_browser .s24_enabled.s24_pagination_right_arrow:hover, .s24_modern_browser .s24_enabled.s24_pagination_left_arrow:hover {
+    background-color: #fff
+}
+.s24_product_size_maxi .s24_pagination_left_arrow.s24_disabled, .s24_product_size_maxi .s24_pagination_right_arrow.s24_disabled {
+    display: none
+}
+@media all and (max-width: 400px) {
+    .s24_product_size_maxi .s24_product:last-child {
+        margin: 0 20px 0 0
+    }
+}
+.s24_product_size_maxi .s24_recommendation {
+    border-bottom: 30px solid #AA3420;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 60px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 60px;
+    top: 17px;
+    text-align: center;
+    border-radius: 0;
+    background: transparent;
+    line-height: .5;
+    box-sizing: content-box;
+}
+.s24_product_size_maxi .s24_recommendations_txt::after {
+    position: relative;
+    top: 6px;
+    left: -6px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+}

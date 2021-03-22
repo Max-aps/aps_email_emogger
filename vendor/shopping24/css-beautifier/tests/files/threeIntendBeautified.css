@@ -1,0 +1,7 @@
+@supports() {
+    @media {
+        h1 {
+            color: blue;
+        }
+    }
+}
