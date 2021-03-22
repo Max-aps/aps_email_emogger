@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/apsdevco/public_html/MaxS
+    - /bin/cp -R * $DEPLOYPATH
