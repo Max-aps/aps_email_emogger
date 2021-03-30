@@ -1,1 +1,81 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  background-image: url("../assets/APS-BG2sm2.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: rgba(250, 250, 250, 0.3);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*.file-enter-page {
+            border: 2px dashed orange;
+            border-radius: 15px 20px;
+        }*/
+}
+
+.form-container form label {
+  border: 2px dashed aqua;
+  border-radius: 15px 20px;
+  height: 200px;
+  position: relative;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container form label input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.form-container form .file-enter-uploader {
+  border: 2px dashed #8BE78B;
+  border-radius: 15px 20px;
+}
+
+.form-container form .file-successful-drop {
+  border: 2px dashed #8BE78B;
+  background-color: rgba(139, 231, 139, 0.3);
+}
+
+.form-container form .file-unsuccessful-drop {
+  border: 2px dashed #ff6e6e;
+  background-color: rgba(255, 110, 110, 0.3);
+}
+
+.form-container form button {
+  width: 40%;
+}
+/*# sourceMappingURL=styles.css.map */
