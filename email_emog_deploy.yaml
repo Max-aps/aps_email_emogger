@@ -27,7 +27,6 @@ kind: Service
 metadata:
   name: emailemog
 spec:
-  type: LoadBalancer
   selector:
     app: emailemog
   ports:
