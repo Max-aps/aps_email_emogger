@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emailemog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: emailemog
+  template:
+    metadata:
+      labels:
+        app: emailemog
+    spec:
+      containers:
+      - name: emailemog
+        image: apsdrupaltest.azurecr.io/aps/emailemog:1.0.5
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: emailemog
+spec:
+  type: LoadBalancer
+  selector:
+    app: emailemog
+  ports:
+  - port: 80
+

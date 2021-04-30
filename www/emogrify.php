@@ -24,29 +24,29 @@
     }
 
     function zipFiles($fileArr){
-        echo '<pre>'; print_r($fileArr); echo '</pre>';
+        // echo '<pre>'; print_r($fileArr); echo '</pre>';
 
         $zip = new ZipArchive;
         if ($zip->open('export.zip', ZipArchive::CREATE) === TRUE)
         {
             foreach($fileArr as $filename => $file){
-                echo "path: ".$filename."</br>";
-                echo "file: ".$file."</br>";
+                //echo "path: ".$filename."</br>";
+                // "file: ".$file."</br>";
                 // Add files to the zip file inside demo_folder
                 if(file_exists($file) && is_readable($file)){
                     $zip->addFile($file, $filename);
                 }else{
-                    echo "file does not exist";
+                    //echo "file does not exist";
                 }
             }
 
             // All files are added, so close the zip file.
             if(!$zip->close()){
-                echo "error adding file to zip";
+                //echo "error adding file to zip";
             }
 
         }else{
-            echo "error creating zip";
+            //echo "error creating zip";
         }
 
         sendZip();
