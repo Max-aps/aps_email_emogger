@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: emailemog
-        image: apsdrupaltest.azurecr.io/aps/emailemog:1.0.5
+        image: acrmainprodukwestaps.azurecr.io/int-emailemog:1.0.5
         resources:
           limits:
             memory: "128Mi"
-            cpu: "100m"
+            cpu: "50m"
         ports:
         - containerPort: 80
 ---

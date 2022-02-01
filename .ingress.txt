@@ -1,0 +1,12 @@
+# .ps1 =
+helm install `
+    in-int-devtools ingress-nginx/ingress-nginx `
+    --namespace int-devtools `
+    --set controller.ingressClassResource.name="ic-nginx-int-devtools" `
+    --set controller.replicaCount=1 `
+    --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux `
+    --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux `
+    --set controller.admissionWebhooks.patch.nodeSelector."beta\.kubernetes\.io/os"=linux `
+    --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-dns-label-name"="int-devtools" `
+    --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-load-balancer-resource-group"="INT-DEVTOOLS-prod" `
+    --set controller.service.loadBalancerIP="51.137.135.162" `

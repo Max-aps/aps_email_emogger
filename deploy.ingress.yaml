@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: int-devtools
+  annotations:
+    kubernetes.io/ingress.class: nginx  
+    cert-manager.io/issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  tls:
+  - hosts:
+    - tools.thinkaps.com
+    secretName: int-devtools-tls-prod
+  rules:
+  - host: tools.thinkaps.com
+    http:
+      paths:
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: emailemog
+            port:
+              number: 80
